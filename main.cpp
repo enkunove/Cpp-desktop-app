@@ -5,33 +5,33 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     CalendarApp window;
-    window.setWindowTitle("Calendar");
+
+    window.setWindowTitle("Investment tracker");
 
     QString style = "QPushButton {"
-                    "    background-color: #79c2d0; /* Green background color */"
-                    "    color: white; /* White text color */"
-                    "    font-size: 20px; /* Font size */"
-                    "    border: 2px solid #5585b5; /* color border */"
-                    "    border-radius: 10px; /* Rounded corners */"
-                    "    padding: 10px 20px; /* Padding inside the button */"
-                    "    outline: none; /* Remove button highlight on click */"
+                    "    background-color: #FAEED1;"
+                    "    color: 322C2B;"
+                    "    font-size: 36px;"
+                    "    border: 2px solid #322C2B;"
+                    "    border-radius: 10px; "
+                    "    padding: 10px 20px; "
+                    "    outline: none; "
                     "}"
 
                     "QPushButton:hover {"
-                    "    background-color: #53a8b6; /* Dark green color on hover */"
+                    "    background-color: #DED0B6;"
                     "}"
-
+                    "QPushButton#b {font-size: 16px; color: #ffffff; background-color: #ff5733; border: none; padding: 8px 16px;border-radius: 3px;} QPushButton#b:hover {background-color: #be3e23; }"
                     "QLabel {"
-                    "    font-size: 24px; /* Font size */"
-                    "    color: #333; /* Text color */"
+                    "    font-size: 26px; "
+                    "    color: #322C2B; "
                     "}"
 
                     "CalendarApp {"
-                    "    background-color: #bbe4e9; /* Background color of the window */"
+                    "    background-color: #FDF7E4; "
                     "}";
 
     window.setStyleSheet(style);
-
     window.showMaximized();
 
     return app.exec();
